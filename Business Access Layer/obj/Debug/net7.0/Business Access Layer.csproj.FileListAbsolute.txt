@@ -1,0 +1,12 @@
+C:\Users\install\Desktop\Practical 23\Business Access Layer\bin\Debug\net7.0\Business Access Layer.deps.json
+C:\Users\install\Desktop\Practical 23\Business Access Layer\bin\Debug\net7.0\Business Access Layer.dll
+C:\Users\install\Desktop\Practical 23\Business Access Layer\bin\Debug\net7.0\Business Access Layer.pdb
+C:\Users\install\Desktop\Practical 23\Business Access Layer\obj\Debug\net7.0\Business Access Layer.csproj.AssemblyReference.cache
+C:\Users\install\Desktop\Practical 23\Business Access Layer\obj\Debug\net7.0\Business Access Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\install\Desktop\Practical 23\Business Access Layer\obj\Debug\net7.0\Business Access Layer.AssemblyInfoInputs.cache
+C:\Users\install\Desktop\Practical 23\Business Access Layer\obj\Debug\net7.0\Business Access Layer.AssemblyInfo.cs
+C:\Users\install\Desktop\Practical 23\Business Access Layer\obj\Debug\net7.0\Business Access Layer.csproj.CoreCompileInputs.cache
+C:\Users\install\Desktop\Practical 23\Business Access Layer\obj\Debug\net7.0\Business Access Layer.dll
+C:\Users\install\Desktop\Practical 23\Business Access Layer\obj\Debug\net7.0\refint\Business Access Layer.dll
+C:\Users\install\Desktop\Practical 23\Business Access Layer\obj\Debug\net7.0\Business Access Layer.pdb
+C:\Users\install\Desktop\Practical 23\Business Access Layer\obj\Debug\net7.0\ref\Business Access Layer.dll
