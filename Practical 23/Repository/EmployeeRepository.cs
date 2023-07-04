@@ -24,12 +24,12 @@ namespace Practical_23.Repository
 
         public async Task<IEnumerable<Employee>> GetEmployeesAsync()
         {
-            return await _context.Employees.ToListAsync();
+            return await _context.Employees.Where(emp => emp.Status == false).ToListAsync();
         }
 
         public async Task<Employee?> GetEmployeeByIdAsync(int id)
         {
-            return await _context.Employees.FirstOrDefaultAsync(emp => emp.Id == id);
+            return await _context.Employees.FirstOrDefaultAsync(emp => emp.Id == id && emp.Status == false);
         }
 
         public async Task CreateEmployeeAsync(Employee employee)
