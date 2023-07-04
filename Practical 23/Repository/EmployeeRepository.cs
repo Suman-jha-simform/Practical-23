@@ -17,19 +17,19 @@ namespace Practical_23.Repository
             var employeeEntity = await GetEmployeeByIdAsync(employee.Id);
             if (employeeEntity != null)
             {
-                employeeEntity.Status = true;
+                employeeEntity.Status = false;
                 _context.Employees.Update(employeeEntity);
             }
         }
 
         public async Task<IEnumerable<Employee>> GetEmployeesAsync()
         {
-            return await _context.Employees.Where(emp => emp.Status == false).ToListAsync();
+            return await _context.Employees.Where(emp => emp.Status == true).ToListAsync();
         }
 
         public async Task<Employee?> GetEmployeeByIdAsync(int id)
         {
-            return await _context.Employees.FirstOrDefaultAsync(emp => emp.Id == id && emp.Status == false);
+            return await _context.Employees.FirstOrDefaultAsync(emp => emp.Id == id && emp.Status == true);
         }
 
         public async Task CreateEmployeeAsync(Employee employee)

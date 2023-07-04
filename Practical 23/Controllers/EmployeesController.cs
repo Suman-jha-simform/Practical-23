@@ -84,25 +84,26 @@ namespace Practical_23.Controllers
                 return NotFound();
             }
 
-            IAbstractFactory? abstractFactory = null;
+            IndoorDepartmentFactory? indoorDepartmentFactory = null;
+            OutDoorDepartmentFactory? outdoorDepartmentFactory = null;
             IDepartment? department = null;
             switch (employee.DepartmentId)
             {
                 case Department.IT:
-                    abstractFactory = new ITAbstractFactory();
-                    department = abstractFactory.CreateDepartment();
+                    indoorDepartmentFactory = new ITAbstractFactory();
+                    department = indoorDepartmentFactory.CreateDepartment();
                     break;
                 case Department.Admin:
-                    abstractFactory = new AdminAbstractFactory();
-                    department = abstractFactory.CreateDepartment();
+                    indoorDepartmentFactory = new AdminAbstractFactory();
+                    department = indoorDepartmentFactory.CreateDepartment();
                     break;
                 case Department.Sales:
-                    abstractFactory = new SalesAbstractFactory();
-                    department = abstractFactory.CreateDepartment();
+                    outdoorDepartmentFactory = new SalesAbstractFactory();
+                    department = outdoorDepartmentFactory.CreateDepartment();
                     break;
                 case Department.OnSite:
-                    abstractFactory = new OnSiteAbstractFactory();
-                    department = abstractFactory.CreateDepartment();
+                    outdoorDepartmentFactory = new OnSiteAbstractFactory();
+                    department = outdoorDepartmentFactory.CreateDepartment();
                     break;
                 default:
                     break;

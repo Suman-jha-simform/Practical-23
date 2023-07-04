@@ -4,7 +4,7 @@ using Business_Access_Layer.Factory;
 
 namespace Business_Access_Layer.AbstractFactory
 {
-    public class AdminAbstractFactory : IAbstractFactory
+    public class AdminAbstractFactory : IndoorDepartmentFactory
     {
         public override IDepartment CreateDepartment()
         {
