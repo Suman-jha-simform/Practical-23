@@ -23,7 +23,7 @@ namespace Practical_23.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<EmployeeDto>>> GetStudentsAsync()
+        public async Task<ActionResult<IEnumerable<EmployeeDto>>> GetEmployeesAsync()
         {
             var employees = await _employeeRepository.GetEmployeesAsync();
             return Ok(_mapper.Map<IEnumerable<EmployeeDto>>(employees));
